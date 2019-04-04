@@ -10,17 +10,15 @@ From: dynverse/dynwrap:bioc
 %labels
     version 0.1.5.2
 
-%setup
+%files
+    . /code
+
+%post
     mkdir /scratchLocal
     mkdir /pbtech_mounts
     mkdir /pbtech_mounts/softlib001
     mkdir /athena
     mkdir /zenodotus
-
-%files
-    . /code
-
-%post
     chmod -R 755 '/code'
     apt-get update && apt-get install -y libcgal-dev libglu1-mesa-dev libgsl-dev
     R -e 'devtools::install_github("kstreet13/slingshot")'
