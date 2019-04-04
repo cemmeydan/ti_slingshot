@@ -18,7 +18,6 @@ From: dynverse/dynwrap:bioc
     mkdir /zenodotus
 
 %files
-
     . /code
 
 %post
