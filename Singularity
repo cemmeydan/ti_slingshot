@@ -19,6 +19,14 @@ From: dynverse/dynwrap:bioc
     mkdir /pbtech_mounts/softlib001
     mkdir /athena
     mkdir /zenodotus
+
+
+
+    
+    
+    
+    
+    
     chmod -R 755 '/code'
     apt-get update && apt-get install -y libcgal-dev libglu1-mesa-dev libgsl-dev
     R -e 'devtools::install_github("kstreet13/slingshot")'
